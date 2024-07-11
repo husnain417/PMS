@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to right, #0C6291, #A63446);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller">
+   <children>
+      <ImageView fitHeight="78.0" fitWidth="183.0" layoutX="209.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/istockphoto-967091208-612x612-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="249.0" layoutY="85.0" style="-fx-text-fill: #ffff;" text="Doctor" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Doc_Name" layoutX="212.0" layoutY="146.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="176.0" promptText="Name">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <TextField fx:id="Doc_Spec" layoutX="318.0" layoutY="278.0" prefHeight="30.0" prefWidth="155.0" promptText="Specialization" />
+      <TextField fx:id="Doc_Email" layoutX="215.0" layoutY="234.0" prefHeight="30.0" prefWidth="176.0" promptText="Email" />
+      <TextField fx:id="Doc_Password" layoutX="226.0" layoutY="323.0" prefHeight="30.0" prefWidth="155.0" promptText="Password" />
+      <Button fx:id="Doc_Registerbtn" layoutX="251.0" layoutY="376.0" mnemonicParsing="false" onAction="#registerdoc" prefHeight="30.0" prefWidth="103.0" style="-fx-background-color: #2B9CDA;" text="Register" textFill="WHITE" />
+      <TextField fx:id="Doc_Number" layoutX="147.0" layoutY="278.0" prefHeight="30.0" prefWidth="149.0" promptText="Contact Info" />
+      <TextField fx:id="Doc_UserName" layoutX="212.0" layoutY="189.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="30.0" prefWidth="176.0" promptText="User Name">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TextField>
+      <Button fx:id="tologin_btn" layoutX="103.0" layoutY="379.0" mnemonicParsing="false" onAction="#tologin" style="-fx-background-color: #000000;" text="Back to Login" textFill="#e4e4e4" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,4 @@
+the doc part will run on intellij IDE
+the pat part will run on eclipse IDE
+
+run the query file to make a database and connect after that you can run any part to see the project functionalities

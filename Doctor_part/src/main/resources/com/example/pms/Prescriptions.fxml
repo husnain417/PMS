@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="853.0" style="-fx-background-color: #ffffff;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pms.controller">
+   <children>
+      <HBox layoutX="168.0" prefHeight="71.0" prefWidth="685.0" style="-fx-background-color: linear-gradient(to right, #0C6291, #A63446);">
+         <children>
+            <Label prefHeight="28.0" prefWidth="124.0" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="Search" prefHeight="26.0" prefWidth="196.0" promptText="Search" style="-fx-border-radius: 100; -fx-background-radius: 100; -fx-background-color: EEEEEE; -fx-border-color: EEEEEE;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="300.0" right="10.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+            <ImageView fx:id="ProfileBtn" fitHeight="40.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/download-removebg-preview%20(8).png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" top="15.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <VBox prefHeight="589.0" prefWidth="168.0" style="-fx-background-color: #0C6291;">
+         <children>
+            <ImageView fx:id="Report_logo" fitHeight="141.0" fitWidth="145.0" pickOnBounds="true" preserveRatio="true" style="-fx-margin-left: 5px;">
+               <image>
+                  <Image url="@../../../Images/istockphoto-967091208-612x612-removebg-preview.png" />
+               </image>
+               <VBox.margin>
+                  <Insets left="10.0" top="30.0" />
+               </VBox.margin>
+            </ImageView>
+            <Label prefHeight="28.0" prefWidth="56.0" style="-fx-text-fill: #ffff;" text="PMS" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="61.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+            </Label>
+            <VBox prefHeight="58.0" prefWidth="168.0" />
+            <Button fx:id="Reports_btn" mnemonicParsing="false" prefHeight="43.0" prefWidth="168.0" text="Reports">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="Reminder_btn" layoutX="10.0" layoutY="168.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="168.0" text="Reminder">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="Appointment_btn" layoutX="10.0" layoutY="211.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="168.0" text="Appointment">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="Recomend_btn" layoutX="10.0" layoutY="254.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="168.0" text="Recommendations">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="Setting_bn" layoutX="10.0" layoutY="340.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="168.0" text="Profile Settings">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="Prescription_btn" layoutX="10.0" layoutY="355.0" mnemonicParsing="false" onAction="#switchToPrescription" prefHeight="43.0" prefWidth="168.0" text="Prescriptions">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="Logout_btn" layoutX="10.0" layoutY="419.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="168.0" text="Logout">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Button fx:id="add_pres_btn" layoutX="238.0" layoutY="118.0" mnemonicParsing="false" onAction="#switchToPrescriptionAdd" opacity="0.8" prefHeight="117.0" prefWidth="244.0" style="-fx-background-color: linear-gradient(to right, #0C6291, #A63446); -fx-text-fill: #ffff;" text="Add Prescription">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="remove_pres_btn" layoutX="524.0" layoutY="117.0" mnemonicParsing="false" onAction="#switchToPrescriptionRemove" opacity="0.8" prefHeight="117.0" prefWidth="244.0" style="-fx-background-color: linear-gradient(to right, #0C6291, #A63446); -fx-text-fill: #ffff;" text="Delete Prescription">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="update_pres_btn" layoutX="238.0" layoutY="251.0" mnemonicParsing="false" onAction="#switchToReportsUpdate" opacity="0.8" prefHeight="117.0" prefWidth="244.0" style="-fx-background-color: linear-gradient(to right, #0C6291, #A63446); -fx-text-fill: #ffff;" text="Update Prescription">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="view_report_btn" layoutX="524.0" layoutY="251.0" mnemonicParsing="false" opacity="0.8" prefHeight="117.0" prefWidth="244.0" style="-fx-background-color: linear-gradient(to right, #0C6291, #A63446); -fx-text-fill: #ffff;" text="View Prescription">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+   <padding>
+      <Insets top="20.0" />
+   </padding>
+</AnchorPane>

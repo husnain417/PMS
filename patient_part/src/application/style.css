@@ -1,0 +1,60 @@
+#Reminder_btn {
+    -fx-background-color:  #0C6291;
+    -fx-text-fill: #ffffff;
+}
+
+#Reminder_btn:hover {
+    -fx-background-color: #A63446;
+    -fx-text-fill: #ffffff; /* Change text color on hover */
+}
+
+#Appointment_btn {
+    -fx-background-color:  #0C6291;
+    -fx-text-fill: #ffffff;
+}
+
+#Appointment_btn:hover {
+    -fx-background-color: #A63446;
+    -fx-text-fill: #ffffff; /* Change text color on hover */
+}
+
+#Reports_btn {
+    -fx-background-color:  #0C6291;
+    -fx-text-fill: #ffffff; 
+}
+
+#Recomend_btn{
+    -fx-background-color:  #0C6291;
+    -fx-text-fill: #ffffff; 
+}
+
+#Recomend_btn:hover {
+    -fx-background-color: #A63446;
+    -fx-text-fill: #ffffff; /* Change text color on hover */
+}
+
+#Setting_bn{
+    -fx-background-color:  #0C6291;
+    -fx-text-fill: #ffffff; 
+}
+
+#Setting_bn:hover {
+    -fx-background-color: #A63446;
+    -fx-text-fill: #ffffff; /* Change text color on hover */
+}
+
+#Logout_btn{
+    -fx-background-color:  #0C6291;
+    -fx-text-fill: #ffffff; 
+}
+
+#Logout_btn:hover {
+    -fx-background-color: #A63446;
+    -fx-text-fill: #ffffff; /* Change text color on hover */
+}
+
+#Reports_btn:hover {
+    -fx-background-color: #A63446;
+    -fx-text-fill: #ffffff; /* Change text color on hover */
+}
+

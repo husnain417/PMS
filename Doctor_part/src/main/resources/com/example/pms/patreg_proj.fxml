@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pat_dob" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to right, #0C6291, #A63446);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pms.controller">
+   <children>
+      <ImageView fitHeight="78.0" fitWidth="183.0" layoutX="209.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/istockphoto-967091208-612x612-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="246.0" layoutY="96.0" style="-fx-text-fill: #ffff;" text="Patient" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="36.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="Pat_DOB" layoutX="323.0" layoutY="158.0" promptText="Date Of Birth" />
+<SplitMenuButton fx:id="Pat_Gender" layoutX="320.0" layoutY="211.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="179.0" text="Gender">
+    <items>
+        <MenuItem mnemonicParsing="false" onAction="#handleGenderSelection" text="Male" />
+        <MenuItem mnemonicParsing="false" onAction="#handleGenderSelection" text="Female" />
+    </items>
+</SplitMenuButton>
+
+      <Button fx:id="Pat_Registerbtn" layoutX="259.0" layoutY="345.0" mnemonicParsing="false" onAction="#registerpat" prefHeight="30.0" prefWidth="103.0" style="-fx-background-color: #2B9CDA;" text="Register" textFill="WHITE" />
+      <TextField fx:id="pat_name" layoutX="133.0" layoutY="158.0" promptText="Name" style="-fx-background-color: #ffffff;" />
+      <TextField fx:id="pat_username" layoutX="133.0" layoutY="215.0" promptText="User name" style="-fx-background-color: #ffffff;" />
+      <TextField fx:id="pat_contact" layoutX="133.0" layoutY="274.0" promptText="Contact Info" style="-fx-background-color: #ffffff;" />
+      <TextField fx:id="pat_pass" layoutX="323.0" layoutY="274.0" prefHeight="26.0" prefWidth="171.0" promptText="Password" style="-fx-background-color: #ffffff;" />
+   </children>
+</AnchorPane>

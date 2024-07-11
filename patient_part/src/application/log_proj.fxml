@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="456.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to right, #0C6291, #A63446);" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller">
+   <children>
+      <TextField fx:id="Password" layoutX="203.0" layoutY="221.0" prefHeight="26.0" prefWidth="190.0" promptText="Password" style="-fx-border-color: white;" />
+      
+      <!-- Define the ToggleGroup in the controller -->
+      <RadioButton fx:id="rd_Doctor" layoutX="261.0" layoutY="281.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="78.0" text="Doctor" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="userTypeGroup" />
+         </toggleGroup></RadioButton>
+      
+      <RadioButton fx:id="rd_patient" layoutX="159.0" layoutY="287.0" mnemonicParsing="false" text="Patient" textFill="WHITE" toggleGroup="$userTypeGroup" />
+      
+      <RadioButton fx:id="rd_Pharma" layoutX="343.0" layoutY="287.0" mnemonicParsing="false" text="Pharmacist" textFill="WHITE" toggleGroup="$userTypeGroup" />
+      
+      <TextField fx:id="Username" layoutX="205.0" layoutY="168.0" prefHeight="26.0" prefWidth="190.0" promptText="Username" style="-fx-border-color: white;" />
+      
+      <ImageView fitHeight="78.0" fitWidth="183.0" layoutX="209.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/istockphoto-967091208-612x612-removebg-preview.png" />
+         </image>
+      </ImageView>
+      
+      <Label layoutX="198.0" layoutY="109.0" style="-fx-text-fill: #ffff;" text="Login/Sign up" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="36.0" />
+         </font>
+      </Label>
+      
+      <Button fx:id="login_btn" layoutX="249.0" layoutY="329.0" mnemonicParsing="false" onAction="#switchHomePage" prefHeight="30.0" prefWidth="103.0" style="-fx-background-color: #7E1946;" text="Login" textFill="WHITE" />
+      
+      <Button fx:id="Register_btn" layoutX="249.0" layoutY="369.0" mnemonicParsing="false" onAction="#toregister" prefHeight="30.0" prefWidth="103.0" style="-fx-background-color: #FBFEF9; -fx-text-fill: BLACK;" text="Register" />
+   </children>
+</AnchorPane>

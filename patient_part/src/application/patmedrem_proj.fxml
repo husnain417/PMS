@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="853.0" style="-fx-background-color: #EDF1F5;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller">
+   <children>
+      <HBox prefHeight="71.0" prefWidth="853.0" style="-fx-background-color: linear-gradient(to right, #0C6291, #A63446);">
+         <children>
+            <ImageView fitHeight="47.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/istockphoto-967091208-612x612-removebg-preview.png" />
+               </image>
+               <HBox.margin>
+                  <Insets top="24.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label prefHeight="28.0" prefWidth="354.0" text="Medication Reminders" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="Search" prefHeight="26.0" prefWidth="196.0" promptText="Search" style="-fx-border-radius: 100; -fx-background-radius: 100; -fx-background-color: EEEEEE; -fx-border-color: EEEEEE;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets left="300.0" right="10.0" top="20.0" />
+               </HBox.margin>
+            </TextField>
+            <ImageView fx:id="ProfileBtn" fitHeight="40.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/download-removebg-preview%20(8).png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" top="15.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <Label layoutX="132.0" layoutY="95.0" text="Current Remainders:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="tohome_btn" layoutX="21.0" layoutY="93.0" mnemonicParsing="false" onAction="#tohome" style="-fx-background-color: #000000;" text="Back to Home" textFill="#e4e4e4" />
+      <SplitMenuButton fx:id="addmed" layoutX="249.0" layoutY="373.0" mnemonicParsing="false" text="Medicines">
+        <items>
+            <MenuItem mnemonicParsing="false" onAction="#mSelection" text="Paracetamol" />
+            <MenuItem mnemonicParsing="false" onAction="#mSelection" text="Amoxicillin" />
+            <MenuItem mnemonicParsing="false" onAction="#mSelection" text="Lisinopril" />
+            <MenuItem mnemonicParsing="false" onAction="#mSelection" text="Metformin" />
+        </items>
+      </SplitMenuButton>
+      <Label layoutX="116.0" layoutY="376.0" text="ADD:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="addtime" layoutX="453.0" layoutY="374.0" promptText="Time:  00:00:00" />
+      <Button fx:id="addbtn" layoutX="688.0" layoutY="373.0" mnemonicParsing="false" onAction="#addrem" style="-fx-background-color: #000000;" text="ADD" textFill="WHITE" />
+      <Label layoutX="116.0" layoutY="430.0" text="Delete:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="deleteremid" layoutX="334.0" layoutY="427.0" promptText="Reminder ID" />
+      <Label layoutX="249.0" layoutY="430.0" text="Enter ID:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="deletebtn" layoutX="688.0" layoutY="428.0" mnemonicParsing="false" onAction="#deleterem" style="-fx-background-color: #000000;" text="Delete" textFill="WHITE" />
+      <Label layoutX="116.0" layoutY="481.0" text="Update:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="393.0" layoutY="377.0" text="Time:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="updateremid" layoutX="232.0" layoutY="479.0" prefHeight="25.0" prefWidth="84.0" promptText="Reminder ID" />
+      <TextField fx:id="updatetime" layoutX="558.0" layoutY="479.0" prefHeight="25.0" prefWidth="94.0" promptText="Time:  00:00:00" />
+      <Label layoutX="498.0" layoutY="482.0" text="Time:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="updatebtn" layoutX="397.0" layoutY="513.0" mnemonicParsing="false" onAction="#updaterem" style="-fx-background-color: #000000;" text="Update" textFill="WHITE" />
+      <SplitMenuButton fx:id="updaterem" layoutX="351.0" layoutY="479.0" mnemonicParsing="false" text="New Medicine">
+         <items>
+            <MenuItem mnemonicParsing="false" onAction="#medSelection" text="Paracetamol" />
+            <MenuItem mnemonicParsing="false" onAction="#medSelection" text="Amoxicillin" />
+            <MenuItem mnemonicParsing="false" onAction="#medSelection" text="Lisinopril" />
+            <MenuItem mnemonicParsing="false" onAction="#medSelection" text="Metformin" />
+         </items>
+      </SplitMenuButton>
+      <TableView fx:id="tableView" layoutX="116.0" layoutY="133.0" prefHeight="200.0" prefWidth="605.0">
+        <columns>
+          <TableColumn fx:id="remidcol" prefWidth="117.0" text="ID" />
+          <TableColumn fx:id="medidcol" prefWidth="120.0" text="Med ID" />
+            <TableColumn fx:id="timeicol" minWidth="0.0" prefWidth="160.0" text="Time" />
+            <TableColumn fx:id="status" minWidth="0.0" prefWidth="207.0" text="Status" />
+        </columns>
+      </TableView>
+      <TextField fx:id="updatestatus" layoutX="682.0" layoutY="479.0" prefHeight="25.0" prefWidth="116.0" promptText="Status: active?OFF" />
+   </children>
+   <padding>
+      <Insets top="20.0" />
+   </padding>
+</AnchorPane>
